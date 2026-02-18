@@ -1,4 +1,5 @@
-library(psych) # ommitted in first version, required for analysis
+library(dplyr) # data wrangling
+library(psych) # omitted in first version, required for analysis
 
 #compare FM by sex
 occ.orig.noindex <- read.csv("data-occ-original.csv", stringsAsFactors = TRUE)

@@ -5,7 +5,8 @@ library(ggstatsplot); library(PMCMRplus)
 occ.orig <- read.csv("data-occ-original-index.csv", stringsAsFactors = TRUE)
 occ.combined <- read.csv("data-occ-combined-index.csv", stringsAsFactors = TRUE)
 
-#by Subsistence
+#by Subsistence comparing original and combo original/mined
+#no difference
 a <- ggbetweenstats(
     data = occ.combined,
     x = Subsistence,
@@ -37,6 +38,7 @@ a + b + plot_annotation(tag_levels = 'A')
 dev.off()
 
 #by sex
+#using combined data, when appropriate
 c <- ggbetweenstats(
     data = occ.combined,
     x = Sex,
