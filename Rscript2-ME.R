@@ -76,7 +76,8 @@ dsd2 <- sd(occ.diff$DepthOP, na.rm = TRUE)
 dsd3 <- sd(occ.diff$FMSag, na.rm = TRUE)
 dsd4 <- sd(occ.diff$FMTrans, na.rm = TRUE)
 dsd5 <- sd(occ.diff$LambInion, na.rm = TRUE)
-dsd <- c(dsd1, dsd2, dsd3, dsd4, dsd4)
+#revised to correct typo dsd4 listed twice rather than dsd5
+dsd <- c(dsd1, dsd2, dsd3, dsd4, dsd5)
 rm(dmean1, dmean2, dmean3, dmean4, dmean5, dsd1, dsd2, dsd3, dsd4, dsd5)
 
 #ME Table
@@ -86,6 +87,12 @@ me.desc$PercentError = (me.desc$dmean / me.desc$tmean) *100
 me.desc <- abs(round(me.desc, 2))
 write.csv(me.desc, file="occ.ME-orig.csv", quote = FALSE,
           row.names = TRUE)
+
+#difference in the values for dsd because of the typo
+#dmean	dsd	tmean	tsd	PercentError
+#0.33	1.59	64.43	7.18	0.51	new, revised dsd5
+#0.33	0.14	64.43	7.18	0.51	old, typo repeating dsd4
+#1.59 vs 0.14 as a SD in isolation is large but as a percentage of the trait mean of ~65mm, it's negligible with no practical impact on the ME assessment.
 
 rm(list = ls())
 gc()
