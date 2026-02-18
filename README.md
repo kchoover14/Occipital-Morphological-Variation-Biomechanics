@@ -1,2 +1,4 @@
 # OccipitalActivityPatterns
+We examined metric and nonmetric traits of the occipital bone across nine skeletal collections representing hunter-gatherers, horticulturalists, and agriculturalists to test whether subsistence-based biomechanical loading shapes occipital morphology beyond biological sex. **All five outcome variables showed significant sex-based differences, but only bicondylar breadth and lambda-inion distance also varied by subsistence practice** --- suggesting a possible biomechanical signal that warrants further investigation with larger, occupation-specific datasets. Foramen magnum area showed clear sexual dimorphism but yielded only 71% sex estimation accuracy, insufficient for forensic use.
+
 This is a repository for analysis of the occipital bone for activity pattern variation across cultures with different subsistence practices..
