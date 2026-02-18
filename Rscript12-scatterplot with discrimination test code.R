@@ -1,3 +1,5 @@
+library(psych) # ommitted in first version, required for analysis
+
 #compare FM by sex
 occ.orig.noindex <- read.csv("data-occ-original.csv", stringsAsFactors = TRUE)
 occ.orig.noindex <- occ.orig.noindex %>% mutate(SexNumber = case_when(
