@@ -16,6 +16,10 @@ The [portfolio page](https://kchoover14.github.io/subsistence-impacts-occipital-
 
 **Packages:** dplyr | tidyr | irr | car | psych | EnvStats | MASS | factoextra | ggplot2 | cowplot
 
+## Environment
+
+- `renv.lock` -- restore with `renv::restore()`
+
 ## Expertise
 
 Combining original skeletal data collection with published data mining to expand analytical scope; distinguishing genetic from behavioral sources of morphological variation; evaluating the forensic utility and limitations of skeletal metrics.
